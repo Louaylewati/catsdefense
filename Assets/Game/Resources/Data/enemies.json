@@ -1,0 +1,86 @@
+{
+  "levelHpScale": 0.15,
+  "enemies": [
+    {
+      "id": "walker",
+      "name": "Walker",
+      "designs": [
+        "Reg1",
+        "Reg2",
+        "Reg3",
+        "Reg4"
+      ],
+      "hp": 30,
+      "speed": 45,
+      "damage": 5,
+      "hitEvery": 1.0,
+      "coins": 1,
+      "stopDistance": 0,
+      "knockback": true,
+      "scale": 1.25
+    },
+    {
+      "id": "runner",
+      "name": "Runner",
+      "designs": [
+        "Reg5",
+        "Reg6",
+        "Reg7"
+      ],
+      "hp": 20,
+      "speed": 90,
+      "damage": 4,
+      "hitEvery": 0.8,
+      "coins": 2,
+      "stopDistance": 0,
+      "knockback": true,
+      "scale": 1.15
+    },
+    {
+      "id": "brute",
+      "name": "Brute",
+      "designs": [
+        "Reg8",
+        "Boss1",
+        "Boss2"
+      ],
+      "hp": 120,
+      "speed": 30,
+      "damage": 12,
+      "hitEvery": 1.5,
+      "coins": 4,
+      "stopDistance": 0,
+      "knockback": false,
+      "scale": 1.15
+    },
+    {
+      "id": "boss",
+      "name": "Tin Can King",
+      "designs": [
+        "Boss7"
+      ],
+      "hp": 1000,
+      "speed": 20,
+      "damage": 40,
+      "hitEvery": 2.0,
+      "coins": 50,
+      "stopDistance": 0,
+      "knockback": false,
+      "scale": 2.0
+    }
+  ],
+  "boss": {
+    "enemy": "boss",
+    "phase1Spawn": "walker",
+    "phase1Count": 2,
+    "phase1Every": 8,
+    "phase2Speed": 30,
+    "phase2Spawn": "runner",
+    "phase2Count": 2,
+    "phase2Every": 6,
+    "slamEvery": 10,
+    "slamDamage": 25,
+    "slamWarning": 1,
+    "hostageHp": 60
+  }
+}

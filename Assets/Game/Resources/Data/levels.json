@@ -1,0 +1,27 @@
+{
+  "barricadeHp": 300,
+  "waveBanner": 2,
+  "waveBreak": 3,
+  "waveHeal": 25,
+  "levels": [
+    {
+      "id": 1, "name": "First Line", "background": "Area1", "barricade": "Barricade1",
+      "waves": [6, 8, 10, 12], "spawnGap": 1.4,
+      "mix": [{ "type": "walker", "weight": 75 }, { "type": "runner", "weight": 25 }],
+      "miniBoss": "brute", "miniBossHp": 2,
+      "bossWave": false, "hostage": false, "escort": "", "escortEvery": 0
+    },
+    {
+      "id": 2, "name": "The Boss", "background": "Area3", "barricade": "Barricade3",
+      "waves": [12, 15], "spawnGap": 1.0,
+      "mix": [{ "type": "walker", "weight": 45 }, { "type": "runner", "weight": 35 }, { "type": "brute", "weight": 20 }],
+      "miniBoss": "", "miniBossHp": 1,
+      "bossWave": true, "hostage": true, "escort": "brute", "escortEvery": 15
+    }
+  ],
+  "boosters": [
+    { "id": "reinforce", "name": "Reinforce", "desc": "Barricade +100 max HP", "cost": 40, "icon": "WallIcon" },
+    { "id": "sharp", "name": "Sharp claws", "desc": "+25% damage", "cost": 60, "icon": "AddonIcon3" },
+    { "id": "quick", "name": "Quick paws", "desc": "+25% fire rate", "cost": 60, "icon": "AddonIcon1" }
+  ]
+}
